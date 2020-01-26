@@ -1,9 +1,30 @@
-baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
-url: "http://localhost:4000/resumecards/" # the base hostname & protocol for your site
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
-exclude:
-  - "README.md"
-  - "CHANGELOG.md"
-  - "CNAME"
-  - "Gemfile"
-  - "Gemfile.lock"
+# Permalinks
+permalink:        pretty
+# relative_permalinks: true
+
+# Setup
+title:            Mohammad Saad
+url:              https://mohsaad.com
+baseurl:          /
+
+real_url:         https://www.mohsaad.com
+
+author:
+  name:           'Mohammad Saad'
+  url:            https://twitter.com/mohsaad230
+
+paginate:         5
+
+# Custom vars
+# version:          2.1.0
+
+github:
+  repo:           https://github.com/mohsaad
+
+plugins: [jekyll-paginate]
+
+exclude: [drafts]
